@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto';
+}
+
+.quizContainer {
+  border: 1px solid gray;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+.question {
+  padding-left: 5px;
+  font-size: 20px;
+}
+
+.choices {
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+input[type=radio] {
+  padding-left: 100px;
+}
