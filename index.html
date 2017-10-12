@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
+    <title>State Capital Quiz</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="index.css" rel="stylesheet" type="text/css" />
@@ -20,31 +20,30 @@
       <div class="startContainer">
         <p>How well do you know your state capitals? Click on Start to begin.</p>
         <p><img src="United-States-Map-2.jpg" width="400"></p>
-        <p><button>Start</button></p>
+        <p><button type="button" id="btn-start">Start</button></p>
       </div>
  
      <form id="js-quiz-form">
+      <fieldset>
 
       <div class="questionContainer">
-        <p>Question goes here.</p>
+        <legend>Quiz question here</legend>
       </div>
+
+      <section class="map"><img src="United-States-Map-2.jpg" width="400" alt="map of the United States"></section>
       
-       <div class="choiceContainer">
-       <input type="radio" name="choice" value="val">val<br>
-       <input type="radio" name="choice" value="val">val<br>
-       <input type="radio" name="choice" value="val">val<br>
-       <input type="radio" name="choice" value="val">val<br>
-       </div>
-       
+       <div class="choiceContainer">Quiz choices here</div>
+       </fieldset>
      </form>
 
-     <div class="statusContainer">
-      <p><button>Question: 1/10</button>
+     <div class="navigation">
+      <button>Question: 1/10</button>
       <button>Score: 0/10</button>
-      <button>Next</button></p>
+      <button type="button" class="js-check">Check your Answer</button>
+      <button type="button" class="js-next">Next Question</button></p>
      </div>
 
-     <div class="endQuizContainer"><p>Final scoree</p>
+     <div class="endQuizContainer"><p>Final score</p>
       <button>Start a new Quiz</button>
     </div>
 
